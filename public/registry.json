@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "daybreak",
+      "name": "Daybreak",
+      "author": "StoryLark",
+      "description": "StoryLark's own face — warm paper instead of stark white, a dawn-teal accent, a gold \"birdsong\" read-along highlight, and a literary reading serif. Ships as the default theme in every StoryLark build.",
+      "swatches": ["#FBF8F2", "#0E7C7B", "#E0A423", "#232020"],
+      "fonts": "Newsreader · Inter",
+      "source": "https://github.com/StoryLark/storylark/tree/main/brands/storylark",
+      "install": "Copy brands/storylark to brands/<your-id> and retune the tokens in theme.css."
+    }
+  ],
+  "templates": [
+    {
+      "id": "classic-library",
+      "name": "Classic Library",
+      "author": "StoryLark",
+      "description": "The default presentation: a flat library of stories with Home, Library, word-synced Reader, Now Playing, and Settings screens. Read, Listen, or Read + Listen per story, offline downloads, and install-to-home-screen built in.",
+      "screens": ["Home", "Library", "Reader", "Now Playing", "Settings"],
+      "source": "https://github.com/StoryLark/storylark/tree/main/app",
+      "install": "The base build ships this template; set layout: \"flat\" in brand.json."
+    }
+  ]
+}
