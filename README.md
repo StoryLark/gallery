@@ -9,9 +9,10 @@ The open library of **themes** and **presentation templates** for
 
 ## Submit yours
 
-Open a pull request adding your entry to [`public/registry.json`](public/registry.json) with a
-link to your source repo. Themes must follow the token contract, templates the screen contract —
-see the [docs](https://storylark.org/docs). Once merged, it appears on the site.
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full process and review criteria. Short
+version: fork, add one entry to [`public/registry.json`](public/registry.json), open a PR.
+`main` is protected — every item lands by reviewed PR, merged by the maintainer, and appears on
+the site automatically.
 
 ## How it deploys
 
