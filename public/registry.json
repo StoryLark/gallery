@@ -5,11 +5,32 @@
       "id": "daybreak",
       "name": "Daybreak",
       "author": "StoryLark",
+      "featured": true,
       "description": "StoryLark's own face — warm paper instead of stark white, a dawn-teal accent, a gold \"birdsong\" read-along highlight, and a literary reading serif. Ships as the default theme in every StoryLark build.",
       "swatches": ["#FBF8F2", "#0E7C7B", "#E0A423", "#232020"],
       "fonts": "Newsreader · Inter",
       "source": "https://github.com/StoryLark/storylark/tree/main/brands/storylark",
       "install": "Copy brands/storylark to brands/<your-id> and retune the tokens in theme.css."
+    },
+    {
+      "id": "gunner-the-lab",
+      "name": "Gunner the Lab",
+      "author": "Gunner the Lab",
+      "description": "A warm storybook palette from a real StoryLark-powered reader: cream pages, pumpkin-orange accents, forest-green links, and a cozy charcoal dark mode. A great example of matching a theme 1:1 to an existing site's identity.",
+      "swatches": ["#FDF6EC", "#E87A2E", "#2D5F2D", "#3B2412"],
+      "fonts": "Newsreader · Inter",
+      "source": "https://github.com/StoryLark/gallery/tree/main/themes/gunner-the-lab",
+      "install": "Copy themes/gunner-the-lab from this repo into your build's brands/ directory."
+    },
+    {
+      "id": "hold-fast-press",
+      "name": "Holdfast Press",
+      "author": "Holdfast Press",
+      "description": "A dark-first literary identity: deep stone surfaces, bone-white text, a rare ember accent, and a four-face type system (Cormorant Garamond display, Cinzel headers, Lora body). Shows how far the token contract can carry a mood — including a defaultTheme of dark.",
+      "swatches": ["#1A1D24", "#D97D52", "#EDE6D6", "#7A8FA8"],
+      "fonts": "Cormorant Garamond · Cinzel · Lora · IBM Plex Mono",
+      "source": "https://github.com/StoryLark/gallery/tree/main/themes/hold-fast-press",
+      "install": "Copy themes/hold-fast-press from this repo into your build's brands/ directory."
     }
   ],
   "templates": [
@@ -17,6 +38,7 @@
       "id": "classic-library",
       "name": "Classic Library",
       "author": "StoryLark",
+      "featured": true,
       "description": "The default presentation: a flat library of stories with Home, Library, word-synced Reader, Now Playing, and Settings screens. Read, Listen, or Read + Listen per story, offline downloads, and install-to-home-screen built in.",
       "screens": ["Home", "Library", "Reader", "Now Playing", "Settings"],
       "source": "https://github.com/StoryLark/storylark/tree/main/app",

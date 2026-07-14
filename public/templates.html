@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presentation Templates — StoryLark Gallery</title>
+<meta name="description" content="All StoryLark presentation templates: the screens and flow a story library is presented with.">
+<link rel="icon" href="https://storylark.dev/icons/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <nav class="side">
+    <p class="brand"><a href="/">StoryLark</a></p>
+    <p class="tag">Gallery</p>
+    <ul>
+      <li><a href="/">Overview</a></li>
+      <li><a href="/themes.html">Themes</a></li>
+      <li><a href="/templates.html" class="active">Presentation Templates</a></li>
+    </ul>
+    <div class="ext">
+      <a href="https://storylark.dev" rel="noopener">Live demo ↗</a>
+      <a href="https://storylark.org/docs" rel="noopener">Docs ↗</a>
+      <a href="https://github.com/StoryLark/storylark" rel="noopener">Source ↗</a>
+    </div>
+  </nav>
+  <main>
+    <p class="eyebrow">StoryLark · gallery · <span id="template-count">templates</span></p>
+    <h1>Presentation Templates</h1>
+    <p class="lede">A presentation template defines the screens, layout, and navigation a story
+    library is presented with — independent of any theme. The same stories can be a flat
+    library, a series shelf, or whatever the screen contract allows.</p>
+    <div id="all-templates"></div>
+    <div class="submit card">
+      <h3>Submit your template</h3>
+      <p class="desc">PR your entry into
+      <a href="https://github.com/StoryLark/gallery" rel="noopener">registry.json</a> following the screen
+      contract in the <a href="https://storylark.org/docs" rel="noopener">docs</a>.</p>
+    </div>
+    <footer class="page">Free &amp; open source · Apache-2.0 · <a href="https://storylark.org">storylark.org</a></footer>
+  </main>
+</div>
+<script src="gallery.js"></script>
+</body>
+</html>

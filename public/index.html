@@ -6,98 +6,60 @@
 <title>StoryLark Gallery — themes &amp; presentation templates</title>
 <meta name="description" content="Browse and share themes and presentation templates for StoryLark, the open-source read-along storybook engine.">
 <link rel="icon" href="https://storylark.dev/icons/favicon.svg">
-<style>
-  :root {
-    --bg: #FBF8F2; --bg-raised: #FFFDF7; --ink: #232020; --muted: #635C54;
-    --teal: #0E7C7B; --teal-strong: #0A5F5E; --gold: #E0A423; --rule: #E6DFD2;
-    color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #14171A; --bg-raised: #1D2226; --ink: #F1ECE3; --muted: #B8B0A4;
-      --teal: #35B7B4; --teal-strong: #57C9C6; --gold: #F0BE50; --rule: #2C3237; color-scheme: dark; }
-  }
-  * { box-sizing: border-box; }
-  body { background: var(--bg); color: var(--ink); font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.55; margin: 0; padding: 2.5rem 1.25rem 4rem; }
-  main { max-width: 46rem; margin: 0 auto; }
-  .eyebrow { font-family: system-ui, sans-serif; font-size: .72rem; letter-spacing: .14em;
-    text-transform: uppercase; color: var(--teal); font-weight: 600; margin: 0 0 .5rem; }
-  h1 { font-size: 1.9rem; font-weight: 600; margin: 0 0 .5rem; letter-spacing: -.01em; text-wrap: balance; }
-  .lede { color: var(--muted); margin: 0 0 2rem; max-width: 38rem; }
-  h2 { font-size: 1.25rem; font-weight: 600; margin: 2.25rem 0 .35rem; }
-  .section-note { color: var(--muted); font-size: .92rem; margin: 0 0 1rem; }
-  .card { background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 1.25rem 1.35rem; margin: 0 0 1rem; }
-  .card h3 { margin: 0; font-size: 1.15rem; font-weight: 600; }
-  .byline { font-family: system-ui, sans-serif; font-size: .78rem; color: var(--muted); margin: .15rem 0 .6rem; }
-  .swatches { display: flex; gap: .4rem; margin: .6rem 0; }
-  .swatch { width: 1.6rem; height: 1.6rem; border-radius: 50%; border: 1px solid var(--rule); }
-  .desc { margin: .5rem 0; font-size: .97rem; }
-  .meta { font-family: system-ui, sans-serif; font-size: .82rem; color: var(--muted); margin: .5rem 0 0; }
-  .meta code { background: var(--bg); border: 1px solid var(--rule); border-radius: 4px;
-    padding: .05rem .35rem; font-size: .78rem; }
-  a { color: var(--teal-strong); }
-  .links { font-family: system-ui, sans-serif; font-size: .85rem; margin-top: .65rem; }
-  .submit { border-left: 3px solid var(--gold); padding: .2rem 0 .2rem 1rem; margin: 2.5rem 0 0; }
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule);
-    font-family: system-ui, sans-serif; font-size: .82rem; color: var(--muted); }
-  footer a { margin-right: .9rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <p class="eyebrow">StoryLark · open gallery</p>
-  <h1>Themes &amp; presentation templates</h1>
-  <p class="lede">StoryLark separates <strong>how a site looks</strong> (a theme: colors, fonts,
-  highlight glow) from <strong>how it's structured</strong> (a presentation template: screens,
-  layout, navigation). Browse both here, use any of them freely, and submit your own.</p>
+<div class="shell">
+  <nav class="side">
+    <p class="brand"><a href="/">StoryLark</a></p>
+    <p class="tag">Gallery</p>
+    <ul>
+      <li><a href="/" class="active">Overview</a></li>
+      <li><a href="/themes.html">Themes</a></li>
+      <li><a href="/templates.html">Presentation Templates</a></li>
+    </ul>
+    <div class="ext">
+      <a href="https://storylark.dev" rel="noopener">Live demo ↗</a>
+      <a href="https://storylark.org/docs" rel="noopener">Docs ↗</a>
+      <a href="https://github.com/StoryLark/storylark" rel="noopener">Source ↗</a>
+    </div>
+  </nav>
+  <main>
+    <p class="eyebrow">StoryLark · open gallery</p>
+    <h1>Make a StoryLark yours</h1>
+    <p class="lede"><a href="https://github.com/StoryLark/storylark" rel="noopener">StoryLark</a> is an
+    open-source, self-hostable read-along storybook engine: word-synced narration, offline
+    reading, install-to-home-screen. Every deployment customizes it on two independent surfaces,
+    and this gallery collects both:</p>
+    <p class="desc"><strong>Themes</strong> control how a site <em>looks</em> — a
+    <code>brand.json</code> + <code>theme.css</code> token pair covering colors, fonts, the
+    read-along highlight glow, icons, and dark mode. Swapping a theme never touches code.</p>
+    <p class="desc"><strong>Presentation templates</strong> control how a library is
+    <em>structured</em> — the screens, layout, and navigation a reader moves through. The same
+    stories can be presented as a flat library, a series shelf, or anything the contract allows.</p>
+    <p class="desc">Everything here is free to use in your own deployment. Mix any theme with any
+    template.</p>
 
-  <h2>Themes</h2>
-  <p class="section-note">A theme is a <code>brand.json</code> + <code>theme.css</code> token pair — swap it without touching code.</p>
-  <div id="themes"></div>
+    <h2>Featured theme</h2>
+    <div id="featured-theme"></div>
+    <p class="links"><a href="/themes.html">Browse all themes →</a></p>
 
-  <h2>Presentation templates</h2>
-  <p class="section-note">A template defines the screens and flow a library is presented with.</p>
-  <div id="templates"></div>
+    <h2>Featured presentation template</h2>
+    <div id="featured-template"></div>
+    <p class="links"><a href="/templates.html">Browse all templates →</a></p>
 
-  <div class="submit card">
-    <h3>Submit yours</h3>
-    <p class="desc">Built a theme or a template? Open a pull request against the
-    <a href="https://github.com/StoryLark/gallery" rel="noopener">gallery repo</a> adding your entry to
-    <code>registry.json</code> with a link to your source. Themes need the token contract
-    (<a href="https://storylark.org/docs" rel="noopener">docs</a>); templates need the screen contract. That's it —
-    once merged, it appears here.</p>
-  </div>
+    <div class="submit card">
+      <h3>Submit yours</h3>
+      <p class="desc">Built a theme or a template? Open a pull request against the
+      <a href="https://github.com/StoryLark/gallery" rel="noopener">gallery repo</a> adding your entry to
+      <code>registry.json</code> with a link to your source. Themes need the token contract
+      (<a href="https://storylark.org/docs" rel="noopener">docs</a>); templates need the screen contract.
+      Once merged, it appears here.</p>
+    </div>
 
-  <footer>
-    <a href="https://storylark.dev">Live demo</a>
-    <a href="https://storylark.org">StoryLark</a>
-    <a href="https://storylark.org/docs">Docs</a>
-    <a href="https://github.com/StoryLark/storylark">Source</a>
-    <div style="margin-top:.5rem">Free &amp; open source · Apache-2.0</div>
-  </footer>
-</main>
-<script>
-  fetch('registry.json').then(r => r.json()).then(reg => {
-    const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-    document.getElementById('themes').innerHTML = reg.themes.map(t => `
-      <div class="card">
-        <h3>${esc(t.name)}</h3>
-        <div class="byline">theme · by ${esc(t.author)}</div>
-        <div class="swatches">${(t.swatches||[]).map(c => `<span class="swatch" style="background:${esc(c)}"></span>`).join('')}</div>
-        <p class="desc">${esc(t.description)}</p>
-        <p class="meta">Fonts: ${esc(t.fonts)}<br>Install: ${esc(t.install)}</p>
-        <div class="links"><a href="${esc(t.source)}" rel="noopener">Source ↗</a></div>
-      </div>`).join('');
-    document.getElementById('templates').innerHTML = reg.templates.map(t => `
-      <div class="card">
-        <h3>${esc(t.name)}</h3>
-        <div class="byline">presentation template · by ${esc(t.author)}</div>
-        <p class="desc">${esc(t.description)}</p>
-        <p class="meta">Screens: ${(t.screens||[]).map(esc).join(' · ')}<br>Install: ${esc(t.install)}</p>
-        <div class="links"><a href="${esc(t.source)}" rel="noopener">Source ↗</a></div>
-      </div>`).join('');
-  });
-</script>
+    <footer class="page">Free &amp; open source · Apache-2.0 · <a href="https://storylark.org">storylark.org</a></footer>
+  </main>
+</div>
+<script src="gallery.js"></script>
 </body>
 </html>
