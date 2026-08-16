@@ -16,7 +16,7 @@ function templateCard(t) {
   return `
   <div class="card">
     <h3>${esc(t.name)}${t.featured ? '<span class="badge">default</span>' : ""}</h3>
-    <div class="byline">presentation template · by ${esc(t.author)}</div>
+    <div class="byline">presentation example · by ${esc(t.author)}</div>
     <p class="desc">${esc(t.description)}</p>
     <p class="meta">Screens: ${(t.screens || []).map(esc).join(" · ")}<br>Install: ${esc(t.install)}</p>
     <div class="links"><a href="${esc(t.source)}" rel="noopener">Source ↗</a></div>

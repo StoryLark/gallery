@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StoryLark Gallery — themes &amp; presentation templates</title>
-<meta name="description" content="Browse and share themes and presentation templates for StoryLark, the open-source read-along storybook engine.">
+<title>StoryLark Gallery — themes &amp; presentation examples</title>
+<meta name="description" content="Browse and share themes and presentation examples for StoryLark, the open-source read-along storybook engine.">
 <link rel="icon" href="https://storylark.dev/icons/favicon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
     <ul>
       <li><a href="/" class="active">Overview</a></li>
       <li><a href="/themes.html">Themes</a></li>
-      <li><a href="/templates.html">Presentation Templates</a></li>
+      <li><a href="/templates.html">Presentation Examples</a></li>
     </ul>
     <div class="ext">
       <a href="https://storylark.dev" rel="noopener">Live demo ↗</a>
@@ -33,24 +33,27 @@
     and this gallery collects both:</p>
     <p class="desc"><strong>Themes</strong> control how a site <em>looks</em> — a
     <code>brand.json</code> + <code>theme.css</code> token pair covering colors, fonts, the
-    read-along highlight glow, icons, and dark mode. Swapping a theme never touches code.</p>
-    <p class="desc"><strong>Presentation templates</strong> control how a library is
-    <em>structured</em> — the screens, layout, and navigation a reader moves through. The same
-    stories can be presented as a flat library, a series shelf, or anything the contract allows.</p>
+    read-along highlight glow, icons, and dark mode. A theme installs as a package on a live
+    deployment (admin portal or CLI) — no rebuild, no code touched.</p>
+    <p class="desc"><strong>Presentation examples</strong> show how a library can be
+    <em>structured</em> — the screens, layout, and navigation a reader moves through, via
+    <code>presentation.json</code>. The same stories can be presented as a flat library, a series
+    shelf, or anything the contract allows. This isn't a separately installable package yet:
+    a presentation shape ships bundled inside a theme package, or is copied by hand.</p>
     <p class="desc">Everything here is free to use in your own deployment. Mix any theme with any
-    template.</p>
+    presentation shape.</p>
 
     <h2>Featured theme</h2>
     <div id="featured-theme"></div>
     <p class="links"><a href="/themes.html">Browse all themes →</a></p>
 
-    <h2>Featured presentation template</h2>
+    <h2>Featured presentation example</h2>
     <div id="featured-template"></div>
-    <p class="links"><a href="/templates.html">Browse all templates →</a></p>
+    <p class="links"><a href="/templates.html">Browse all presentation examples →</a></p>
 
     <div class="submit card">
       <h3>Submit yours</h3>
-      <p class="desc">Built a theme or a template? Fork the
+      <p class="desc">Built a theme or a presentation example? Fork the
       <a href="https://github.com/StoryLark/gallery" rel="noopener">gallery repo</a>, add one entry to
       <code>registry.json</code>, and open a pull request. Every submission is reviewed before it
       lands — the full process and review criteria are in

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Presentation Templates — StoryLark Gallery</title>
-<meta name="description" content="All StoryLark presentation templates: the screens and flow a story library is presented with.">
+<title>Presentation Examples — StoryLark Gallery</title>
+<meta name="description" content="Presentation examples for StoryLark: real presentation.json shapes showing the screens, nav, and flow a story library can be given.">
 <link rel="icon" href="https://storylark.dev/icons/favicon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
     <ul>
       <li><a href="/">Overview</a></li>
       <li><a href="/themes.html">Themes</a></li>
-      <li><a href="/templates.html" class="active">Presentation Templates</a></li>
+      <li><a href="/templates.html" class="active">Presentation Examples</a></li>
     </ul>
     <div class="ext">
       <a href="https://storylark.dev" rel="noopener">Live demo ↗</a>
@@ -25,14 +25,17 @@
     </div>
   </nav>
   <main>
-    <p class="eyebrow">StoryLark · gallery · <span id="template-count">templates</span></p>
-    <h1>Presentation Templates</h1>
-    <p class="lede">A presentation template defines the screens, layout, and navigation a story
+    <p class="eyebrow">StoryLark · gallery · <span id="template-count">examples</span></p>
+    <h1>Presentation Examples</h1>
+    <p class="lede"><code>presentation.json</code> defines the screens, nav, and flow a story
     library is presented with — independent of any theme. The same stories can be a flat
-    library, a series shelf, or whatever the screen contract allows.</p>
+    library, a series shelf, or whatever the contract allows. <strong>This isn't yet its own
+    installable package</strong> — today a shape ships bundled inside a theme's package as an
+    optional file, or you copy it into <code>presentation/&lt;your-id&gt;/</code> by hand. A
+    standalone, importable <code>storylark-template-*</code> format is planned but not built.</p>
     <div id="all-templates"></div>
     <div class="submit card">
-      <h3>Submit your template</h3>
+      <h3>Submit your presentation example</h3>
       <p class="desc">PR your entry into
       <a href="https://github.com/StoryLark/gallery" rel="noopener">registry.json</a> following the screen
       contract — process and review criteria in
